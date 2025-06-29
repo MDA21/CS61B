@@ -151,9 +151,10 @@ public class Model extends Observable {
             eachColumn(i);
         }
         String NewBoard = board.toString();
-        if(!OldBoard.equals(NewBoard)){
+        if (!OldBoard.equals(NewBoard)) {
             changed = true;
         }
+        this.board.setViewingPerspective(Side.NORTH);
 
         checkGameOver();
         if (changed) {
