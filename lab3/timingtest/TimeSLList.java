@@ -23,9 +23,9 @@ public class TimeSLList {
 
     public static void timeGetLast() {
         // TODO: YOUR CODE HERE
-        AList<Integer> Ns = new AList<>();
-        AList<Double> times = new AList<>();
-        AList<Integer> opCounts = new AList<>();
+        AList<Integer> Ns = new AList<Integer>();
+        AList<Double> times = new AList<Double>();
+        AList<Integer> opCounts = new AList<Integer>();
         int M = 10000;
 
         int temp = 1000;
@@ -38,7 +38,7 @@ public class TimeSLList {
         for(int i = 0; i < Ns.size(); i++){
             int N = Ns.get(i);
             int j = 0;
-            SLList<Integer> list = new SLList<>();
+            SLList<Integer> list = new SLList<Integer>();
             while(j < N){
                 list.addLast(j);
                 j++;
