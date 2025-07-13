@@ -136,4 +136,7 @@ public class LinkedListDequeTest {
 
         */
     }
+
+    public class LinkedListDeque {
+    }
 }
