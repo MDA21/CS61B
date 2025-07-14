@@ -57,7 +57,7 @@ public class LinkedListDeque<T>{
 
     public T removeFirst(){
         StuffNode current = sentinel.next;
-        if(isEmpty()){
+        if(isEmpty()||current==sentinel){
             return null;
         }else{
             T removed = current.item;
@@ -70,7 +70,7 @@ public class LinkedListDeque<T>{
 
     public T removeLast(){
         StuffNode current = sentinel.prev;
-        if(isEmpty()){
+        if(isEmpty()||current==sentinel){
             return null;
         }else{
             T removed = current.item;
