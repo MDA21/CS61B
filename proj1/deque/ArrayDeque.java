@@ -1,6 +1,6 @@
 package deque;
 
-public class ArrayDeque<T> {
+public class ArrayDeque<T> implements deque<T> {
 
     private int nextFirst;
     private int nextLast;
